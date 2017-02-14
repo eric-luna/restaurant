@@ -1,0 +1,113 @@
+body,
+html {
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  background: #fff; }
+  .nav .logo {
+    margin-right: auto; }
+  .nav .button {
+    border: none;
+    margin: 10px 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer; }
+  .nav .links {
+    display: none; }
+  .nav a {
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; }
+    .nav a:visited {
+      color: black; }
+    .nav a:hover {
+      color: gray; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+    .sidenav a:hover, .offcanvas .sidenav a:focus {
+      color: #f1f1f1; }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+#vid {
+  object-fit: initial;
+  width: 100%;
+  height: 100vh; }
+
+.content {
+  display: flex;
+  flex-direction: column; }
+  .content .block .text {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .content .block .text div h3 {
+      width: 85%;
+      text-align: left;
+      margin: auto; }
+    .content .block .text div p {
+      width: 85%;
+      margin: auto;
+      text-align: left; }
+  .content .block .img {
+    width: 100%;
+    height: 350px;
+    background-color: black; }
+  .content .block .img1 {
+    background: url("../img/food1.jpg"); }
+  .content .block .img2 {
+    background: url("../img/food2.jpg"); }
+  .content .block-odd {
+    display: flex;
+    flex-direction: column-reverse; }
+
+@media screen and (min-width: 700px) {
+  .nav .links {
+    display: inline-block; }
+  .nav .button {
+    display: none; }
+
+  .sidenav {
+    display: none; }
+
+  .content .block {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    .content .block .text {
+      width: 50%; }
+    .content .block .img {
+      width: 50%; } }
+
+/*# sourceMappingURL=src.css.map */
