@@ -2,8 +2,10 @@
 <html>
 
 <head>
-    <title>Video Site</title>
+    <title>Restaurant</title>
     <link rel="stylesheet" type="text/css" href="css/src.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -11,16 +13,17 @@
     <header>
         <nav class="nav">
             <a href="" class="logo">Name</a>
-            <a href="" class="links">Menu</a>
+            <a href="index.html" class="links">Home</a>
+            <a href="menu.html" class="links">Menu</a>
             <a href="" class="links">Our Story</a>
             <a href="" class="links">Contact</a>
             <button class="button" onclick="openNav()">&equiv;</button>
         </nav>
         <nav id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Our Story</a>
             <a href="#">Contact</a>
         </nav>
         <div class="video">
@@ -31,6 +34,9 @@
         </div>
     </header>
     <main class="content">
+        <section class="intro">
+            <h1>The Ninety Nine Restaurant offers a great tasting menu to its customers, depending on their varied tastes. From seafood to dessert to Mexican food, everything looks really delicious. Among the Ninety Nine Restaurant’s menu.</h1>
+        </section>
         <section class="block">
             <div class="text">
                 <div>
@@ -47,37 +53,97 @@
             </div>
             <div class="text">
                 <div>
-                    <h3>About our food</h3>
+                    <h3>Fresh Ingredients</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
             </div>
         </section>
-        <section>
-        	
+        <section class="block">
+            <div class="text">
+                <div>
+                    <h3>World-Class Chefs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="img img3">
+            </div>
+        </section>
+        <section class="stuff">
+            <div class="catering">
+                <h3>Catering</h3>
+                <img src="img/food1.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div class="events">
+                <h3>Events</h3>
+                <img src="img/food2.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div class="drinks">
+                <h3>Drinks</h3>
+                <img src="img/food3.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
         </section>
     </main>
     <footer>
-    	<div class="outro">
-    		<h3>Feel free to contact us about any questions or business inquiries.</h3>
-    	</div>
-    	<div class="contact">
-    		<div class="">
-    			<h4>Call Us</h4>
-    			<p>210-555-5555</p>
-    		</div>
-    		<div class="">
-    			<h4>E-mail Us</h4>
-    			<p>ericandrewluna@gmail.com</p>
-    		</div>
-    		<div class="">
-    			<h4>Find Us</h4>
-    			<p>ericandrewluna@gmail.com</p>
-    		</div>
-    		<div class="social-media">
-    			<img src="">
-    		</div>
-    	</div>
+        <div class="contact">
+            <h3>Feel free to contact us about any questions or business inquiries.</h3>
+        </div>
+        <div class="contact-info">
+            <div class="phone">
+                <h4>Call Us</h4>
+                <a href="tel:210-555-5555">210-555-5555</a>
+            </div>
+            <div class="email">
+                <h4>E-mail Us</h4>
+                <p>General Inquiries:</p>
+                <a href="mailto:someone@example.com?Subject=Hello%20again">ericandrewluna@gmail.com</a>
+                <p>Business Inquiries:</p>
+                <a href="mailto:someone@example.com?Subject=Hello%20again">ericandrewluna@gmail.com</a>
+                <p>Catering Inquiries:</p>
+                <a href="mailto:someone@example.com?Subject=Hello%20again">ericandrewluna@gmail.com</a>
+            </div>
+            <div class="location">
+                <h4>Find Us</h4>
+                <a href="https://www.google.com/maps/">
+                    <p>12345 Fancy Street</p>
+                    <p>San Antonio, Texas 78230</p>
+                </a>
+            </div>
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <img src="img/icons/instagram.svg">
+                <img src="img/icons/facebook.svg">
+                <img src="img/icons/linkedin.svg">
+                <img src="img/icons/twitter.svg">
+            </div>
+        </div>
+        <div class="form">
+            <h4>Newsletter</h4>
+            <p class="sign-up">Sign up to hear about our new specials, added menu items and upcoming events.</p>
+            <form>
+                <input type="text" name="name" placeholder="Full Name">
+                <br>
+                <br>
+                <input type="text" name="email" placeholder="Email Address">
+                <br>
+                <br>
+                <input type="submit" name="">
+            </form>
+        </div>
+        <!-- <p class="copyright">Copyright © 2017 Eric Luna</p> -->
     </footer>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
