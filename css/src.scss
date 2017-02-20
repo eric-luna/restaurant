@@ -14,6 +14,15 @@ html {
     font-family: 'Philosopher', sans-serif;
     .logo {
         margin-right: auto;
+        margin-left: 10px;
+        color: #FF0000;
+        border: 1px solid #000;
+        padding: 5px 10px;
+        font-size: 2em;
+        text-decoration: none;
+        &:visited {
+            color: #FF0000;
+        }
     }
     .button {
         border: none;
@@ -24,18 +33,6 @@ html {
     }
     .links {
         display: none;
-    }
-    a {
-        font-size: 2em;
-        color: black;
-        text-decoration: none;
-        margin: 0 10px;
-        &:visited {
-            color: black;
-        }
-        &:hover {
-            color: gray;
-        }
     }
 }
 
@@ -55,12 +52,12 @@ html {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: #fff;
         display: block;
         transition: 0.3s;
         &:hover,
         .offcanvas &:focus {
-            color: #f1f1f1;
+            color: #FF0000;
         }
     }
     .closebtn {
@@ -85,14 +82,21 @@ html {
     flex-direction: column;
     .intro {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto;
         text-align: center;
+        line-height: 1.5;
         padding: 100px 0;
+        font-size: 2em;
         font-family: 'Philosopher', sans-serif;
         font-weight: bold;
         width: 80%;
+        color: #000;
+        h1 {
+            color: #FF0000;
+        }
     }
     .block {
         .text {
@@ -102,6 +106,9 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background: #000;
+            color: #fff;
+            line-height: 1.3;
             div {
                 h3 {
                     width: 85%;
@@ -131,7 +138,11 @@ html {
             background: url("../img/food3.jpg");
         }
     }
-    .block-odd {
+    .block-even {
+        .text {
+            background: #F5F5F5;
+            color: #000;
+        }
         display: flex;
         flex-direction: column-reverse;
     }
@@ -148,13 +159,18 @@ html {
             flex-direction: column;
             justify-content: center;
             margin: 30px 0;
+            h3 {
+                color: #FF0000;
+            }
             img {
-                width: 70%;
+                width: 75%;
                 margin: auto;
             }
             p {
-                width: 85%;
-                margin: auto;
+                width: 75%;
+                margin: 10px auto;
+                line-height: 1.5;
+                text-align: center;
             }
         }
     }
@@ -170,7 +186,7 @@ html {
         width: 90%;
         margin: auto;
         text-align: left;
-        h1 {
+        h2 {
             border-bottom: 1px solid #fff;
         }
         ul {
@@ -195,16 +211,24 @@ html {
     }
 }
 
+.drinks {
+    background: #fff;
+    color: #000;
+}
+
 footer {
     background: #FFED00;
+    background: #FF0000;
     display: flex;
     flex-direction: column;
+    color: #000;
+    padding: 10px 10px;
     h3,
     h4 {
         font-family: 'Philosopher', sans-serif;
     }
     a {
-        color: #000;
+        color: #fff;
     }
     .contact {}
     .contact-info {}
@@ -215,10 +239,11 @@ footer {
             width: 50%;
         }
         input {
-            color: #000;
+            color: #fff;
             border: none;
             background: rgba(0, 0, 0, 0);
             border-bottom: 1px solid #000;
+            padding: 5px 0;
             &:focus {
                 outline: none;
             }
@@ -226,19 +251,20 @@ footer {
         input[type="submit"] {
             background: #000;
             color: #fff;
+            padding: 5px 10px;
         }
         ::-webkit-input-placeholder {
-            color: #000;
+            color: #fff;
         }
         :-ms-input-placeholder {
-            color: #000;
+            color: #fff;
         }
         ::-moz-placeholder {
-            color: #000;
+            color: #fff;
             opacity: 1;
         }
         :-moz-placeholder {
-            color: #000;
+            color: #fff;
             opacity: 1;
         }
     }
@@ -253,6 +279,18 @@ footer {
     .nav {
         .links {
             display: inline-block;
+            font-size: 2em;
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.25s;
+            &:visited {
+                color: #000;
+            }
+            &:hover {
+                color: #FF0000;
+                border-bottom: 1px solid #000;
+            }
         }
         .button {
             display: none;
@@ -263,7 +301,7 @@ footer {
     }
     .content {
         .intro {
-            padding: 200px 0;
+            padding: 150px 0;
         }
         .block {
             width: 100%;
