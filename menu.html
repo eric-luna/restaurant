@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Restaurant</title>
+    <title>HodgePodge</title>
     <link rel="stylesheet" type="text/css" href="css/src.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="nav">
-            <a href="index.html" class="logo">Name</a>
+            <a href="index.html" class="logo">HodgePodge</a>
             <a href="index.html" class="links">Home</a>
             <a href="menu.html" class="links">Menu</a>
             <a href="story.html" class="links">Our Story</a>
@@ -28,102 +28,175 @@
         </nav>
     </header>
     <main>
-        <div class="menu">
+        <div class="menu-select">
+            <button class="selected" id="food">Food</button>
+            <button id="drinks">Drinks</button>
+            <button id="desserts">Desserts</button>
+        </div>
+        <div class="menu" id="food-menu">
             <div>
-                <div class="starters">
-                    <h1>Food</h1>
-                    <h2>Starters</h2>
-                    <ul>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="lunch">
-                    <h2>Lunch</h2>
-                    <ul>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="dinner">
-                    <h2>Dinner</h2>
-                    <ul>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                        <li>
-                            <h3>BBQ Plate</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                        </li>
-                    </ul>
-                </div>
+                <section>
+                    <div class="starters">
+                        <h1>Food</h1>
+                        <h2>Starters</h2>
+                        <ul>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="lunch">
+                        <h2>Lunch</h2>
+                        <ul>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="dinner">
+                        <h2>Dinner</h2>
+                        <ul>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                            <li>
+                                <h3>BBQ Plate</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
-        <div class="menu drinks">
+        <div class="menu drinks hide" id="drink-menu">
+            <div>
+                <section>
+                    <div class="american-crafts">
+                        <h1>Beer</h1>
+                        <h2>American Craft</h2>
+                        <p>Blue Moon Belgian White / Dogfish Head 90 Minute IPA / Dogfish Head 60 Minute IPA / Flying Dog Raging Bitch Belgian-Style IPA / Goose Island 312 Urban Wheat / Goose Island IPA / Harpoon IPA / Harpoon UFO / Lagunitas IPA / Lagunitas Little Sumpin' Sumpin' Ale / Leinenkugel Seasonal / New Belgium Fat Tire Amber Ale / Rouge Dead Guy Ale / Samuel Adams Boston Lager / Sam Adams Rebel IPA / Samuel Adams Seasonal / Sierra Nevada Pale Ale / Stone Arrogant Bastard / Stone IPA</p>
+                    </div>
+                    <div class="american-favorites">
+                        <h2>American Favorites</h2>
+                        <p>Bones Brew / Bud Light / Bud Light Lime / Budweiser / Coors Light / Michelob Ultra / Miller Lite / Pabst Blue Ribbon / Redd's Apple Ale / Yuengling Lager</p>
+                    </div>
+                    <div class="imports">
+                        <h2>Imports</h2>
+                        <p>Amstel Light / Corona Extra / Corona Light / Dos Equis Lager / Guinness / Heineken / Modelo Especial / Newcastle Brown Ale / Stella Artois</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="wine">
+                        <h1>Wine</h1>
+                        <h2>Whites</h2>
+                        <p>
+                            White Zinfandel | Sutter Home Riesling | Chateau Ste. Michelle Moscato | 14 Hands Pinot Grigio | Ecco Domani Sauvignon Blanc | Kim Crawford Chardonnay | Darkhorse Chardonnay | Kendall-Jackson Vintner’s Reserve Prosecco | Lunetta
+                        </p>
+                    </div>
+                    <div class="wine">
+                        <h2>Reds</h2>
+                        <p>
+                            Pinot Noir | Mark West Merlot | Woodbridge Merlot | Velvet Devil Cabernet Sauvignon | Carnivor Cabernet Sauvignon | Josh Cellars
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div class="margaritas">
+                        <h1>Margaritas</h1>
+                        <ul>
+                            <li>
+                                <h3>Blue Margarita</h3>
+                                <p>Tequila | Curaçao, blue | Lime Juice | Triple Sec</p>
+                            </li>
+                            <li>
+                                <h3>Electric Margarita</h3>
+                                <p>Tequila | Lime Juice | Grand Marnier Cordon Rouge | Mango Nectar</p>
+                            </li>
+                            <li>
+                                <h3>Mango Margarita</h3>
+                                <p>Tequila | Curaçao, blue | Rose's Lime Juice</p>
+                            </li>
+                            <li>
+                                <h3>Peach Margarita</h3>
+                                <p>Tequila | Lime Juice | Grand Marnier Cordon Rouge | Peach Nectar</p>
+                            </li>
+                            <li>
+                                <h3>Strawberry Margarita</h3>
+                                <p>Tequila | Lime Juice | Grand Marnier Cordon Rouge
+                                    <br> Liqueur, strawberry | Strawberries</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="menu desserts hide" id="dessert-menu">
             <div>
                 <div class="starters">
-                    <h1>Drinks</h1>
+                    <h1>Desserts</h1>
                     <h2>Starters</h2>
                     <ul>
                         <li>
