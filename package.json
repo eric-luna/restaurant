@@ -1,0 +1,27 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant website built from scratch",
+  "main": "index.js",
+  "scripts": {
+    "postcss": "postcss --config postcss.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericluna92/restaurant.git"
+  },
+  "author": "Eric Luna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericluna92/restaurant/issues"
+  },
+  "homepage": "https://github.com/ericluna92/restaurant#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.4",
+    "cssnano": "^3.10.0",
+    "http-server": "^0.9.0",
+    "postcss": "^5.2.14",
+    "postcss-cli": "^2.6.0",
+    "webpack": "^2.2.1"
+  }
+}

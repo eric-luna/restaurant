@@ -14,14 +14,14 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 75px;
   width: 100%;
+  height: 100px;
   font-family: 'Philosopher', sans-serif; }
   .nav .logo {
     margin-right: auto;
     margin-left: 10px;
     color: #FF3B49;
-    border: 1px solid #000;
+    border: 3px solid #000;
     padding: 5px 10px;
     font-size: 2em;
     text-decoration: none; }
@@ -209,7 +209,7 @@ html {
 .desserts {
   color: #fff; }
   .desserts div h2 {
-    border-bottom: 5px solid #000; }
+    border-bottom: 5px solid #fff; }
 
 footer {
   background: #FF3B49;
@@ -256,7 +256,7 @@ footer {
     padding: 10px 0;
     text-align: left; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   .nav .links {
     display: inline-block;
     font-size: 2em;
@@ -269,6 +269,8 @@ footer {
     .nav .links:hover {
       color: #FF3B49;
       border-bottom: 1px solid #000; }
+  .nav .current-page {
+    border-bottom: 3px solid #FF3B49; }
   .nav .button {
     display: none; }
 
