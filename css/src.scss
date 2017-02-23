@@ -271,6 +271,26 @@ html {
     }
 }
 
+// Story Section 
+.story {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        line-height: 1.5;
+        height: 100vh;
+        font-size: 2em;
+        font-family: 'Philosopher', sans-serif;
+        font-weight: bold;
+        width: 80%;
+        color: #000;
+        h1 {
+            color: #FF3B49;
+        }
+    }
+
 footer {
     background: #FF3B49;
     display: flex;
