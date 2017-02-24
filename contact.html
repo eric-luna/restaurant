@@ -16,8 +16,8 @@
             <span href="" class="logo">HodgePodge</span>
             <a href="index.html" class="links">Home</a>
             <a href="menu.html" class="links">Menu</a>
-            <a href="story.html" class="links current-page">Our Story</a>
-            <a href="contact.html" class="links">Contact</a>
+            <a href="story.html" class="links">Our Story</a>
+            <a href="contact.html" class="links current-page">Contact</a>
             <button class="button" onclick="openNav()">&equiv;</button>
         </nav>
         <nav id="mySidenav" class="sidenav">
@@ -28,36 +28,27 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main class="story">
-        <section class="story-intro">
-            <h1>Our Story</h1>
-            <p>In 1950, Jack and Jill Luna opened a little three-table cafe for early-rising farmers and workers in their community. Sixty years later HodpePodge has constantly grown and evolved and is a world-famous landmark - the place hometown regulars and hungry tourists go for authentic food and a warm Texas welcome. Jack and Jill’s children and grandchildren continue the family tradition of good food and big-hearted hospitality.</p>
-        </section>
-        <img src="img/story.jpg" class="story-img">
-        <section class="story-block">
-            <div class="text">
-                <h1>Culture</h1>
-                <p>The culture of the restaurant was instilled by Mr. and Mrs. Luna long before a mission statement was ever written down on paper and is still evident today. Guests, team members and community are all treated with respect.</p>
-            </div>
-            <div class="img">
-                <img src="img/culture.jpg">
-            </div>
-        </section>
-        <section class="story-block even">
-            <div class="text">
-                <h1>Principles</h1>
-                <ul>
-                    <li>Our idea from day one has been to create, produce and serve super great, full-flavored food that has a beginning, middle, and finish to every bite.</li>
-                    <li>We strive for efficient, uncompromised, sincere, fabulous, caring and exceptional service.</li>
-                    <li>We provide a caring, genuine, free-spirited, diverse place to work.</li>
-                    <li>We are excited about building strong relationships with everyone we interact with: our customers, our community, and our suppliers.</li>
-                    <li>Community is very important to us, and we are an active part of our community. We purchase from local farms, donate food to charitable causes, and work with organizations to teach people the importance of eating a local diet.</li>
-                </ul>
-            </div>
-            <div class="img">
-                <img src="img/local.jpg">
-            </div>
-        </section>
+    <main class="contact-form">
+        <div class="container">
+            <form id="contact" action="" method="post">
+                <h3>Contact Us</h3>
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="contact">

@@ -2,7 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Pontano Sans', sans-serif;
 }
 
 .show {
@@ -13,13 +13,29 @@ html {
     display: none;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    background: #FF3B49;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background: #000;
+}
+
 .nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 100px;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Bevan', cursive;
     .logo {
         margin-right: auto;
         margin-left: 10px;
@@ -55,7 +71,7 @@ html {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Bevan', cursive;
     a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
@@ -98,11 +114,11 @@ html {
         line-height: 1.5;
         padding: 100px 0;
         font-size: 2em;
-        font-family: 'Philosopher', sans-serif;
         font-weight: bold;
         width: 80%;
         color: #000;
         h1 {
+            font-family: 'Bevan', cursive;
             color: #FF3B49;
         }
     }
@@ -122,7 +138,7 @@ html {
                     width: 85%;
                     text-align: left;
                     margin: auto;
-                    font-family: 'Philosopher', sans-serif;
+                    font-family: 'Bevan', cursive;
                     color: #FF3B49;
                 }
                 p {
@@ -135,7 +151,6 @@ html {
         .img {
             width: 100%;
             height: 350px;
-            background-color: black;
         }
         .img1 {
             background: url("../img/food1.jpg");
@@ -160,9 +175,8 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: auto;
         text-align: center;
-        padding: 100px 0;
+        padding: 75px 0;
         div {
             display: flex;
             flex-direction: column;
@@ -170,16 +184,17 @@ html {
             margin: 30px 0;
             h3 {
                 color: #FF3B49;
+                font-family: 'Bevan', cursive;
             }
             img {
                 width: 75%;
                 margin: auto;
             }
             p {
-                width: 75%;
                 margin: 10px auto;
                 line-height: 1.5;
                 text-align: center;
+                width: 90%;
             }
         }
     }
@@ -194,11 +209,12 @@ html {
     height: 100px;
     button {
         background: none;
+        font-family: 'Bevan', cursive;
         border: none;
         cursor: pointer;
-        font-size: 2em;
+        font-size: 1.5em;
         color: #fff;
-        margin: 15px;
+        margin: 13px;
         &:hover {
             color: #000;
         }
@@ -218,16 +234,30 @@ html {
     color: #fff;
     margin: auto;
     text-align: center;
-    padding: 50px 0;
+    padding-bottom: 100px;
+    .img {
+        width: 100%;
+        height: 200px;
+        background-image: url("../img/food-pic.jpg");
+        background-position: center;
+    }
+    .drink-pic {
+        background-image: url("../img/drink-pic.jpg");
+        background-size: cover;
+    }
+    .dessert-pic {
+        background-image: url("../img/dessert-pic.jpg");
+        background-size: cover;
+    }
     div {
         width: 90%;
         margin: auto;
         text-align: left;
+        h1 {
+            font-family: 'Bevan', cursive;
+        }
         h2 {
             border-bottom: 5px solid #fff;
-        }
-        section {
-            margin: 75px auto;
         }
         ul {
             text-align: center;
@@ -273,6 +303,7 @@ html {
 
 // Story Section 
 .story {
+    .story-intro {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -280,16 +311,182 @@ html {
         margin: auto;
         text-align: center;
         line-height: 1.5;
-        height: 100vh;
         font-size: 2em;
-        font-family: 'Philosopher', sans-serif;
         font-weight: bold;
+        padding-bottom: 75px;
         width: 80%;
         color: #000;
         h1 {
             color: #FF3B49;
+            font-family: 'Bevan', cursive;
         }
     }
+    .story-img {
+        width: 100%;
+    }
+    .story-block {
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #FF3B49;
+            color: #fff;
+            line-height: 1.5;
+            padding: 50px 0;
+            h1 {
+                width: 85%;
+                text-align: left;
+                margin: 0 auto;
+                font-family: 'Bevan', cursive;
+                color: #000;
+            }
+            p,
+            ul {
+                width: 85%;
+                margin: 0 auto;
+                text-align: left;
+            }
+            ul {
+                list-style-type: square;
+            }
+        }
+        .img {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .even {
+        .text {
+            color: #000;
+            background: #fff;
+        }
+    }
+}
+
+// Contact Form 
+.contact-form {
+    background: #FF3B49;
+    background-image: url("../img/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    .container {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    #contact {
+        background: #F9F9F9;
+        padding: 25px;
+        margin: 100px 0;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    #contact h3 {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        font-family: 'Bevan', cursive;
+    }
+    #contact h4 {
+        margin: 5px 0 15px;
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        background: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+    }
+    #contact input[type="text"]:hover,
+    #contact input[type="email"]:hover,
+    #contact input[type="tel"]:hover,
+    #contact input[type="url"]:hover,
+    #contact textarea:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 1px solid #aaa;
+    }
+    #contact textarea {
+        height: 100px;
+        max-width: 100%;
+        resize: none;
+    }
+    #contact button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #000;
+        color: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 15px;
+        font-family: 'Bevan', cursive;
+    }
+    #contact button[type="submit"]:hover {
+        background: #43A047;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+    #contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    .copyright {
+        text-align: center;
+    }
+    #contact input:focus,
+    #contact textarea:focus {
+        outline: 0;
+        border: 1px solid #aaa;
+    }
+    ::-webkit-input-placeholder {
+        color: #888;
+    }
+    :-moz-placeholder {
+        color: #888;
+    }
+    ::-moz-placeholder {
+        color: #888;
+    }
+    :-ms-input-placeholder {
+        color: #888;
+    }
+}
 
 footer {
     background: #FF3B49;
@@ -299,7 +496,7 @@ footer {
     padding: 10px 10px;
     h3,
     h4 {
-        font-family: 'Philosopher', sans-serif;
+        font-family: 'Bevan', cursive;
     }
     h4 {
         color: #000;
@@ -369,7 +566,7 @@ footer {
             }
         }
         .current-page {
-            border-bottom:3px solid #FF3B49;
+            border-bottom: 3px solid #FF3B49;
         }
         .button {
             display: none;
@@ -395,11 +592,16 @@ footer {
         }
         .stuff {
             flex-direction: row;
-            flex-grow: 1;
             div {
-                margin: 0;
+                margin: 0 auto;
+                height: 500px;
                 img {
-                    width: 80%;
+                    width: 330px;
+                    height: 210px;
+                }
+                p {
+                    width: 330px;
+                    height: 125px;
                 }
             }
         }
@@ -412,6 +614,30 @@ footer {
                     width: 50%;
                 }
             }
+        }
+    }
+    .story {
+        .story-block {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .text {
+                width: 50%;
+                margin: 5px;
+                height: 400px;
+            }
+            .img {
+                width: 50%;
+                padding: 5px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .even {
+            display: flex;
+            flex-direction: row-reverse;
         }
     }
     footer {

@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: 'Muli', sans-serif; }
+  font-family: 'Pontano Sans', sans-serif; }
 
 .show {
   display: block; }
@@ -10,13 +10,26 @@ html {
 .hide {
   display: none; }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background: #FF3B49; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: #000; }
+
 .nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 100px;
-  font-family: 'Philosopher', sans-serif; }
+  font-family: 'Bevan', cursive; }
   .nav .logo {
     margin-right: auto;
     margin-left: 10px;
@@ -47,7 +60,7 @@ html {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
-  font-family: 'Philosopher', sans-serif; }
+  font-family: 'Bevan', cursive; }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -82,11 +95,11 @@ html {
     line-height: 1.5;
     padding: 100px 0;
     font-size: 2em;
-    font-family: 'Philosopher', sans-serif;
     font-weight: bold;
     width: 80%;
     color: #000; }
     .content .intro h1 {
+      font-family: 'Bevan', cursive;
       color: #FF3B49; }
   .content .block .text {
     width: 100%;
@@ -102,7 +115,7 @@ html {
       width: 85%;
       text-align: left;
       margin: auto;
-      font-family: 'Philosopher', sans-serif;
+      font-family: 'Bevan', cursive;
       color: #FF3B49; }
     .content .block .text div p {
       width: 85%;
@@ -110,8 +123,7 @@ html {
       text-align: left; }
   .content .block .img {
     width: 100%;
-    height: 350px;
-    background-color: black; }
+    height: 350px; }
   .content .block .img1 {
     background: url("../img/food1.jpg"); }
   .content .block .img2 {
@@ -129,24 +141,24 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
     text-align: center;
-    padding: 100px 0; }
+    padding: 75px 0; }
     .content .stuff div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin: 30px 0; }
       .content .stuff div h3 {
-        color: #FF3B49; }
+        color: #FF3B49;
+        font-family: 'Bevan', cursive; }
       .content .stuff div img {
         width: 75%;
         margin: auto; }
       .content .stuff div p {
-        width: 75%;
         margin: 10px auto;
         line-height: 1.5;
-        text-align: center; }
+        text-align: center;
+        width: 90%; }
 
 .menu-select {
   display: flex;
@@ -157,11 +169,12 @@ html {
   height: 100px; }
   .menu-select button {
     background: none;
+    font-family: 'Bevan', cursive;
     border: none;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
-    margin: 15px; }
+    margin: 13px; }
     .menu-select button:hover {
       color: #000; }
     .menu-select button:focus {
@@ -176,15 +189,26 @@ html {
   color: #fff;
   margin: auto;
   text-align: center;
-  padding: 50px 0; }
+  padding-bottom: 100px; }
+  .menu .img {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/food-pic.jpg");
+    background-position: center; }
+  .menu .drink-pic {
+    background-image: url("../img/drink-pic.jpg");
+    background-size: cover; }
+  .menu .dessert-pic {
+    background-image: url("../img/dessert-pic.jpg");
+    background-size: cover; }
   .menu div {
     width: 90%;
     margin: auto;
     text-align: left; }
+    .menu div h1 {
+      font-family: 'Bevan', cursive; }
     .menu div h2 {
       border-bottom: 5px solid #fff; }
-    .menu div section {
-      margin: 75px auto; }
     .menu div ul {
       text-align: center;
       list-style: none;
@@ -213,7 +237,7 @@ html {
   .desserts div h2 {
     border-bottom: 5px solid #fff; }
 
-.story {
+.story .story-intro {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -221,14 +245,147 @@ html {
   margin: auto;
   text-align: center;
   line-height: 1.5;
-  height: 100vh;
   font-size: 2em;
-  font-family: 'Philosopher', sans-serif;
   font-weight: bold;
+  padding-bottom: 75px;
   width: 80%;
   color: #000; }
-  .story h1 {
-    color: #FF3B49; }
+  .story .story-intro h1 {
+    color: #FF3B49;
+    font-family: 'Bevan', cursive; }
+.story .story-img {
+  width: 100%; }
+.story .story-block .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FF3B49;
+  color: #fff;
+  line-height: 1.5;
+  padding: 50px 0; }
+  .story .story-block .text h1 {
+    width: 85%;
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Bevan', cursive;
+    color: #000; }
+  .story .story-block .text p,
+  .story .story-block .text ul {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left; }
+  .story .story-block .text ul {
+    list-style-type: square; }
+.story .story-block .img {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  .story .story-block .img img {
+    width: 100%; }
+.story .even .text {
+  color: #000;
+  background: #fff; }
+
+.contact-form {
+  background: #FF3B49;
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0; }
+  .contact-form * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; }
+  .contact-form .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; }
+  .contact-form #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+  .contact-form #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: 'Bevan', cursive; }
+  .contact-form #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400; }
+  .contact-form fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%; }
+  .contact-form #contact input[type="text"],
+  .contact-form #contact input[type="email"],
+  .contact-form #contact input[type="tel"],
+  .contact-form #contact input[type="url"],
+  .contact-form #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px; }
+  .contact-form #contact input[type="text"]:hover,
+  .contact-form #contact input[type="email"]:hover,
+  .contact-form #contact input[type="tel"]:hover,
+  .contact-form #contact input[type="url"]:hover,
+  .contact-form #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa; }
+  .contact-form #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none; }
+  .contact-form #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Bevan', cursive; }
+  .contact-form #contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out; }
+  .contact-form #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+  .contact-form .copyright {
+    text-align: center; }
+  .contact-form #contact input:focus,
+  .contact-form #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa; }
+  .contact-form ::-webkit-input-placeholder {
+    color: #888; }
+  .contact-form :-moz-placeholder {
+    color: #888; }
+  .contact-form ::-moz-placeholder {
+    color: #888; }
+  .contact-form :-ms-input-placeholder {
+    color: #888; }
 
 footer {
   background: #FF3B49;
@@ -238,7 +395,7 @@ footer {
   padding: 10px 10px; }
   footer h3,
   footer h4 {
-    font-family: 'Philosopher', sans-serif; }
+    font-family: 'Bevan', cursive; }
   footer h4 {
     color: #000; }
   footer a {
@@ -307,17 +464,39 @@ footer {
     .content .block .img {
       width: 50%; }
   .content .stuff {
-    flex-direction: row;
-    flex-grow: 1; }
+    flex-direction: row; }
     .content .stuff div {
-      margin: 0; }
+      margin: 0 auto;
+      height: 500px; }
       .content .stuff div img {
-        width: 80%; }
+        width: 330px;
+        height: 210px; }
+      .content .stuff div p {
+        width: 330px;
+        height: 125px; }
 
   .menu div ul {
     flex-direction: row; }
     .menu div ul li {
       width: 50%; }
+
+  .story .story-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    .story .story-block .text {
+      width: 50%;
+      margin: 5px;
+      height: 400px; }
+    .story .story-block .img {
+      width: 50%;
+      padding: 5px; }
+      .story .story-block .img img {
+        width: 100%;
+        height: 100%; }
+  .story .even {
+    display: flex;
+    flex-direction: row-reverse; }
 
   footer {
     flex-direction: row;
