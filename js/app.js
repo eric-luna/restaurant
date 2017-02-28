@@ -1,19 +1,26 @@
-/* Set the width of the side navigation to 250px */
+// Navigation
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 */
 function closeNav() {
+	event.preventDefault();
     document.getElementById("mySidenav").style.width = "0";
 }
 
-var foodButton = document.getElementById('food');
-var drinksButton = document.getElementById('drinks');
-var dessertsButton = document.getElementById('desserts');
-var foodMenu = document.getElementById('food-menu');
-var drinksMenu = document.getElementById('drink-menu');
-var dessertsMenu = document.getElementById('dessert-menu');
+let button = document.getElementById('button');
+let close = document.getElementById('close');
+button.addEventListener('click', openNav);
+close.addEventListener('click', closeNav);
+
+
+// Menu Selection
+let foodButton = document.getElementById('food');
+let drinksButton = document.getElementById('drinks');
+let dessertsButton = document.getElementById('desserts');
+let foodMenu = document.getElementById('food-menu');
+let drinksMenu = document.getElementById('drink-menu');
+let dessertsMenu = document.getElementById('dessert-menu');
 
 foodButton.addEventListener('click', function(){
 	foodButton.classList.add("selected");
